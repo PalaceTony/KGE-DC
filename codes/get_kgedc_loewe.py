@@ -37,7 +37,7 @@ parser.add_argument('--em_size', type=int, default=200, help="the embeding size"
 parser.add_argument('--epoch1', type=int, default=1, help="n epoch")
 parser.add_argument('--epoch2', type=int, default=1, help="n epoch")
 parser.add_argument('--batch', type=int, default=256, help="batch size")
-parser.add_argument('--gpu', type=int, default=1, help="cuda device")
+parser.add_argument('--gpu', type=int, default=0, help="cuda device")
 parser.add_argument('--patience', type=int, default=100, help='patience for early stop')
 parser.add_argument('--suffix', type=str, default='results_kgedc', help="model dir suffix")
 parser.add_argument('--hidden', type=int, default= 8192, help="hidden size, [2048, 4096, 8192],")

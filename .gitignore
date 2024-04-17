@@ -1,2 +1,14 @@
 codes/models/__pycache__/PRODeepSyn_datasets.cpython-38.pyc
 codes/models/__pycache__/PRODeepSyn_utils.cpython-38.pyc
+results_loewe/results_kgedc/args.json
+results_loewe/results_kgedc/class_stats.txt
+results_loewe/results_kgedc/cv.log
+results_loewe/results_kgedc/embeddings_ents.txt
+results_loewe/results_kgedc/embeddings_rels.txt
+results_loewe/results_kgedc/reg_stats.txt
+results_loewe/results_kgedc/test_data_0.txt
+results_loewe/results_kgedc/test_data_cells_stats_0.txt
+results_loewe/results_kgedc/test_loss.pkl
+results_loewe/results_kgedc/0/4.pkl
+codes/models/__pycache__/PRODeepSyn_datasets.cpython-37.pyc
+codes/models/__pycache__/PRODeepSyn_utils.cpython-37.pyc
