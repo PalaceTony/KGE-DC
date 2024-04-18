@@ -12,3 +12,7 @@ results_loewe/results_kgedc/test_loss.pkl
 results_loewe/results_kgedc/0/4.pkl
 codes/models/__pycache__/PRODeepSyn_datasets.cpython-37.pyc
 codes/models/__pycache__/PRODeepSyn_utils.cpython-37.pyc
+test_data.pkl
+train_data.pkl
+valid_data.pkl
+results_loewe

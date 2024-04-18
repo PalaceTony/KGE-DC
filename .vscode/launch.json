@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "run_loewe",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/codes/get_kgedc_loewe.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--lr1",
+        "0.01",
+        "--epoch1",
+        "10",
+        "--em_size",
+        "200",
+        "--lr2",
+        "0.01",
+        "--epoch2",
+        "10",
+        "--hidden",
+        "8192"
+      ]
+    }
+  ]
+}

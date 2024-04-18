@@ -442,9 +442,34 @@ logging.info("Best hidden size: {} | Best learning rate: {}".format(best_hs, bes
 
 ##preprocess data
 ##preprocess data
-train_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell, SYNERGY_FILE, use_folds=train_fold)
-valid_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell,SYNERGY_FILE, use_folds=[valid_fold], train=False)
-test_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell, SYNERGY_FILE, use_folds=[test_fold], train=False)
+# train_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell, SYNERGY_FILE, use_folds=train_fold)
+# valid_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell,SYNERGY_FILE, use_folds=[valid_fold], train=False)
+# test_data = FastSynergyDataset( DRUG_FEAT_FILE, embeddings_drug, CELL_FEAT_FILE, embeddings_cell, SYNERGY_FILE, use_folds=[test_fold], train=False)
+
+# # Save the train_data
+# with open('train_data.pkl', 'wb') as f:
+#     pickle.dump(train_data, f)
+
+# # Save the valid_data
+# with open('valid_data.pkl', 'wb') as f:
+#     pickle.dump(valid_data, f)
+
+# # Save the test_data
+# with open('test_data.pkl', 'wb') as f:
+#     pickle.dump(test_data, f)
+
+# Load the train_data
+with open('train_data.pkl', 'rb') as f:
+    train_data = pickle.load(f)
+
+# Load the valid_data
+with open('valid_data.pkl', 'rb') as f:
+    valid_data = pickle.load(f)
+
+# Load the test_data
+with open('test_data.pkl', 'rb') as f:
+    test_data = pickle.load(f)
+
 
 train_loader = FastTensorDataLoader(*train_data.tensor_samples(), batch_size=args.batch, shuffle=True)
 valid_loader = FastTensorDataLoader(*valid_data.tensor_samples(), batch_size=len(valid_data))
